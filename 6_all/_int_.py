@@ -7,13 +7,33 @@
 # a = int(input('введите число '))
 # print((is_prime(a)))
 
-a = int(input('введите сторону квадрата '))
-def square(a):
-    p = 4 * a
-    s = a * a
-    d = (a ** 2) / 2
-    d = d ** 0.5
+# a = int(input('введите сторону квадрата '))
+# def square(a):
+#     p = 4 * a
+#     s = a * a
+#     d = (a ** 2) / 2
+#     d = d ** 0.5
+#
+#     k = (p, s, d)
+#
+#     return k
 
-    k = (p, s, d)
 
-    return k
+def arithmetic(x, y, z):
+    if z == "+":
+        return (x + y)
+    elif z == "-":
+        return (x - y)
+    elif z == "*":
+        return (x * y)
+    elif z == "/":
+        return (x / y)
+    else:
+        return ("Invalid operation")
+
+
+print(arithmetic(2, 6, '+'))
+print(arithmetic(2, 5, '*'))
+print(arithmetic(4, 4, '-'))
+print(arithmetic(4, 9, '/'))
+print(arithmetic(4, 7, 0))
