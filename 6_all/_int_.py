@@ -19,21 +19,30 @@
 #     return k
 
 
-def arithmetic(x, y, z):
-    if z == "+":
-        return (x + y)
-    elif z == "-":
-        return (x - y)
-    elif z == "*":
-        return (x * y)
-    elif z == "/":
-        return (x / y)
+# def arithmetic(x, y, z):
+#     if z == "+":
+#         return (x + y)
+#     elif z == "-":
+#         return (x - y)
+#     elif z == "*":
+#         return (x * y)
+#     elif z == "/":
+#         return (x / y)
+#     else:
+#         return ("Invalid operation")
+#
+#
+# print(arithmetic(2, 6, '+'))
+# print(arithmetic(2, 5, '*'))
+# print(arithmetic(4, 4, '-'))
+# print(arithmetic(4, 9, '/'))
+# print(arithmetic(4, 7, 0))
+
+
+a = input('Введите слово: ')
+def is_Palindrome(a):
+    s = a.lower()
+    if s == s[::-1]:
+        print('Является палиндромом')
     else:
-        return ("Invalid operation")
-
-
-print(arithmetic(2, 6, '+'))
-print(arithmetic(2, 5, '*'))
-print(arithmetic(4, 4, '-'))
-print(arithmetic(4, 9, '/'))
-print(arithmetic(4, 7, 0))
+        print('Не является палиндромом')
